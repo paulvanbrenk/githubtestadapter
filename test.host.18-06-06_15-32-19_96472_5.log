@@ -1,0 +1,79 @@
+TpTrace Verbose: 0 : 8800, 1, 2018/06/06, 15:32:20.286, 1261514596528, testhost.dll, TestRequestHanlder is acting as client
+TpTrace Information: 0 : 8800, 1, 2018/06/06, 15:32:20.308, 1261514789917, testhost.dll, DefaultEngineInvoker: Monitoring parent process with id: '22048'
+TpTrace Information: 0 : 8800, 1, 2018/06/06, 15:32:20.325, 1261514953571, testhost.dll, DefaultEngineInvoker: Initialize communication on endpoint address: '127.0.0.1:061474'
+TpTrace Information: 0 : 8800, 1, 2018/06/06, 15:32:20.330, 1261515011153, testhost.dll, SocketClient.Start: connecting to server endpoint: 127.0.0.1:061474
+TpTrace Information: 0 : 8800, 1, 2018/06/06, 15:32:20.347, 1261515175270, testhost.dll, DefaultEngineInvoker: Start Request Processing.
+TpTrace Information: 0 : 8800, 7, 2018/06/06, 15:32:20.348, 1261515192380, testhost.dll, SocketClient.OnServerConnected: connected to server endpoint: 127.0.0.1:061474
+TpTrace Verbose: 0 : 8800, 7, 2018/06/06, 15:32:20.353, 1261515238017, testhost.dll, Connected to server, and starting MessageLoopAsync
+TpTrace Verbose: 0 : 8800, 7, 2018/06/06, 15:32:20.357, 1261515279817, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:61474 localEndPoint: 127.0.0.1:61475
+TpTrace Verbose: 0 : 8800, 7, 2018/06/06, 15:32:20.415, 1261515861295, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: 127.0.0.1:61474 localEndPoint: 127.0.0.1:61475
+TpTrace Information: 0 : 8800, 7, 2018/06/06, 15:32:20.744, 1261519146757, testhost.dll, TestRequestHandler.ProcessRequests: received message: (ProtocolVersion) -> 2
+TpTrace Verbose: 0 : 8800, 7, 2018/06/06, 15:32:20.807, 1261519778829, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"Logging TestHost Diagnostics in file: D:\\dd\\GitHubTestAdapter\\test.host.18-06-06_15-32-19_96472_5.log"}}
+TpTrace Verbose: 0 : 8800, 7, 2018/06/06, 15:32:20.807, 1261519782116, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:61474 localEndPoint: 127.0.0.1:61475
+TpTrace Verbose: 0 : 8800, 7, 2018/06/06, 15:32:20.808, 1261519783653, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: 127.0.0.1:61474 localEndPoint: 127.0.0.1:61475
+TpTrace Information: 0 : 8800, 7, 2018/06/06, 15:32:20.815, 1261519860342, testhost.dll, TestRequestHandler.ProcessRequests: received message: (TestExecution.Initialize) -> [
+  "d:\\dd\\GitHubTestAdapter\\UnitTestProject\\bin\\Debug\\netcoreapp1.0\\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll"
+]
+TpTrace Information: 0 : 8800, 7, 2018/06/06, 15:32:20.816, 1261519862786, testhost.dll, Execution Session Initialize.
+TpTrace Verbose: 0 : 8800, 7, 2018/06/06, 15:32:20.837, 1261520078841, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:61474 localEndPoint: 127.0.0.1:61475
+TpTrace Verbose: 0 : 8800, 7, 2018/06/06, 15:32:20.837, 1261520081214, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: 127.0.0.1:61474 localEndPoint: 127.0.0.1:61475
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:20.841, 1261520112896, testhost.dll, TestExecutorService: Loading the extensions
+TpTrace Information: 0 : 8800, 7, 2018/06/06, 15:32:20.844, 1261520148195, testhost.dll, TestRequestHandler.ProcessRequests: received message: (TestExecution.StartWithSources) -> {
+  "AdapterSourceMap": {
+    "_none_": [
+      "d:\\dd\\GitHubTestAdapter\\UnitTestProject\\bin\\Debug\\netcoreapp1.0\\UnitTestProject.dll"
+    ]
+  },
+  "RunSettings": "<RunSettings>\r\n  <RunConfiguration>\r\n    <ResultsDirectory>d:\\dd\\GitHubTestAdapter\\UnitTestProject\\TestResults</ResultsDirectory>\r\n    <TargetPlatform>X86</TargetPlatform>\r\n    <TargetFrameworkVersion>.NETCoreApp,Version=v1.0</TargetFrameworkVersion>\r\n    <TestAdaptersPaths>D:\\dd\\GitHubTestAdapter\\CoreTestAdapter\\bin\\Debug\\netstandard1.6</TestAdaptersPaths>\r\n    <DesignMode>False</DesignMode>\r\n    <CollectSourceInformation>False</CollectSourceInformation>\r\n  </RunConfiguration>\r\n  <LoggerRunSettings>\r\n    <Loggers>\r\n      <Logger friendlyName=\"Console\" uri=\"logger://microsoft/TestPlatform/ConsoleLogger/v1\" assemblyQualifiedName=\"Microsoft.VisualStudio.TestPlatform.CommandLine.Internal.ConsoleLogger, vstest.console, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a\" codeBase=\"C:\\Program Files\\dotnet\\sdk\\2.1.400-preview-008942\\vstest.console.dll\" enabled=\"True\" />\r\n    </Loggers>\r\n  </LoggerRunSettings>\r\n</RunSettings>",
+  "TestExecutionContext": {
+    "FrequencyOfRunStatsChangeEvent": 10,
+    "RunStatsChangeEventTimeout": "00:00:01.5000000",
+    "InIsolation": false,
+    "KeepAlive": false,
+    "AreTestCaseLevelEventsRequired": false,
+    "IsDebug": false,
+    "TestCaseFilter": null,
+    "FilterOptions": null
+  },
+  "Package": null
+}
+TpTrace Information: 0 : 8800, 7, 2018/06/06, 15:32:20.845, 1261520153518, testhost.dll, Execution started.
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:20.860, 1261520310795, testhost.dll, TestPluginCache: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:20.879, 1261520494484, testhost.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:20.880, 1261520512181, testhost.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:20.881, 1261520514733, testhost.dll, TestPluginCache: Executors are 'executor://MSTestAdapter/v2'.
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:20.881, 1261520516015, testhost.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:20.881, 1261520517510, testhost.dll, TestPluginCache: Loggers are ''.
+TpTrace Information: 0 : 8800, 3, 2018/06/06, 15:32:20.892, 1261520626978, testhost.dll, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestExecutor
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:20.899, 1261520693708, testhost.dll, TestExecutorExtensionManager: Loading executor Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestExecutor
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:20.899, 1261520696102, testhost.dll, TestExecutorService: Loaded the executors
+TpTrace Verbose: 0 : 8800, 7, 2018/06/06, 15:32:20.901, 1261520722427, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:61474 localEndPoint: 127.0.0.1:61475
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:20.902, 1261520722952, testhost.dll, TestPluginCache: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:20.902, 1261520728709, testhost.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:20.902, 1261520730046, testhost.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:20.902, 1261520731073, testhost.dll, TestPluginCache: Executors are 'executor://MSTestAdapter/v2'.
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:20.902, 1261520732253, testhost.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:20.903, 1261520733444, testhost.dll, TestPluginCache: Loggers are ''.
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:20.904, 1261520746911, testhost.dll, TestExecutorService: Loaded the settings providers
+TpTrace Information: 0 : 8800, 3, 2018/06/06, 15:32:20.904, 1261520748245, testhost.dll, TestExecutorService: Loaded the extensions
+TpTrace Information: 0 : 8800, 3, 2018/06/06, 15:32:20.996, 1261521671786, testhost.dll, TestDiscoveryManager: Discovering tests from sources d:\dd\GitHubTestAdapter\UnitTestProject\bin\Debug\netcoreapp1.0\UnitTestProject.dll
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:21.000, 1261521704965, testhost.dll, TestPluginCache: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:21.002, 1261521728275, testhost.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:21.002, 1261521729744, testhost.dll, TestPluginCache: Discoverers are 'Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer, Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:21.002, 1261521730951, testhost.dll, TestPluginCache: Executors are 'executor://MSTestAdapter/v2'.
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:21.002, 1261521731943, testhost.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:21.003, 1261521733547, testhost.dll, TestPluginCache: Loggers are ''.
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:21.014, 1261521844125, testhost.dll, BaseRunTests.RunTestInternalWithExecutors: Running tests for executor://MSTestAdapter/v2
+TpTrace Warning: 0 : 8800, 3, 2018/06/06, 15:32:21.185, 1261523557355, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 8800, 3, 2018/06/06, 15:32:21.189, 1261523599535, testhost.dll, TestRunCache: No test found corresponding to testResult 'TestMethod1  Passed' in inProgress list.
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:21.190, 1261523608213, testhost.dll, BaseRunTests.RunTestInternalWithExecutors: Completed running tests for executor://MSTestAdapter/v2
+TpTrace Information: 0 : 8800, 3, 2018/06/06, 15:32:21.197, 1261523674138, testhost.dll, Sending test run complete
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:21.280, 1261524508466, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.Completed","Payload":{"TestRunCompleteArgs":{"TestRunStatistics":{"ExecutedTests":1,"Stats":{"Passed":1}},"IsCanceled":false,"IsAborted":false,"Error":null,"AttachmentSets":[],"ElapsedTimeInRunningTests":"00:00:00.1816668","Metrics":{}},"LastRunTests":{"NewTestResults":[{"TestCase":{"Id":"351f1f0e-919b-767b-1808-df34638c3736","FullyQualifiedName":"UnitTestProject.UnitTest1.TestMethod1","DisplayName":"TestMethod1","ExecutorUri":"executor://MSTestAdapter/v2","Source":"d:\\dd\\GitHubTestAdapter\\UnitTestProject\\bin\\Debug\\netcoreapp1.0\\UnitTestProject.dll","CodeFilePath":null,"LineNumber":-1,"Properties":[{"Key":{"Id":"MSTestDiscoverer.TestClassName","Label":"ClassName","Category":"","Description":"","Attributes":1,"ValueType":"System.String"},"Value":"UnitTestProject.UnitTest1"},{"Key":{"Id":"TestObject.Traits","Label":"Traits","Category":"","Description":"","Attributes":5,"ValueType":"System.Collections.Generic.KeyValuePair`2[[System.String],[System.String]][]"},"Value":[]}]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":null,"Messages":[],"ComputerName":null,"Duration":"00:00:00.0063690","StartTime":"2018-06-06T15:32:21.1250927-07:00","EndTime":"2018-06-06T15:32:21.1720895-07:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":1,"Stats":{"Passed":1}},"ActiveTests":[]},"RunAttachments":[],"ExecutorUris":["executor://mstestadapter/v2"]}}
+TpTrace Verbose: 0 : 8800, 3, 2018/06/06, 15:32:21.281, 1261524515754, testhost.dll, BaseRunTests.RunTests: Run is complete.
+TpTrace Verbose: 0 : 8800, 7, 2018/06/06, 15:32:21.282, 1261524523988, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: 127.0.0.1:61474 localEndPoint: 127.0.0.1:61475
+TpTrace Information: 0 : 8800, 7, 2018/06/06, 15:32:21.282, 1261524526035, testhost.dll, TestRequestHandler.ProcessRequests: received message: (TestSession.Terminate) -> null
+TpTrace Information: 0 : 8800, 7, 2018/06/06, 15:32:21.282, 1261524527090, testhost.dll, Session End message received from server. Closing the connection.
+TpTrace Information: 0 : 8800, 1, 2018/06/06, 15:32:21.283, 1261524535798, testhost.dll, SocketClient.Stop: Stop communication from server endpoint: 127.0.0.1:061474
+TpTrace Information: 0 : 8800, 1, 2018/06/06, 15:32:21.283, 1261524537385, testhost.dll, SocketClient: Stop: Cancellation requested. Stopping message loop.
+TpTrace Verbose: 0 : 8800, 1, 2018/06/06, 15:32:21.283, 1261524540976, testhost.dll, LengthPrefixCommunicationChannel.Dispose: Dispose reader and writer.
+TpTrace Information: 0 : 8800, 1, 2018/06/06, 15:32:21.284, 1261524543608, testhost.dll, Testhost process exiting.
